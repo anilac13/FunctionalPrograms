@@ -8,7 +8,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose an option to perform \n1.Flip Coin \n2.Leap Year \n3.Power of Two \n4.Exit");
+                Console.WriteLine("\nChoose an option to perform \n1.Flip Coin \n2.Leap Year \n3.Power of Two \n4.Nth Harmonic number \n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,9 @@ namespace FunctionalPrograms
                         PowerOfTwo.FindPowerOf2();
                         break;
                     case 4:
+                        HarmonicForm.PrintHarmonicForm();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
