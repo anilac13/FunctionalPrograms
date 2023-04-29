@@ -9,7 +9,7 @@ namespace FunctionalPrograms
             while (flag)
             {
                 Console.WriteLine("\nChoose an option to perform \n1.Flip Coin \n2.Leap Year \n3.Power of Two \n4.Nth Harmonic number \n5.Prime Factors of a Number " +
-                    "\n6.Quotient and Remainder \n7.Exit");
+                    "\n6.Quotient and Remainder \n7.Swap two numbers \n8.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,9 @@ namespace FunctionalPrograms
                         QuotientAndRemainder.Operation();
                         break;
                     case 7:
+                        SwapTwoNumbers.SwapNumbers();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
